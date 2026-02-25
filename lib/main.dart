@@ -14,11 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => WeatherBloc(),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Weather App',
-        theme: ThemeData(primarySwatch: Colors.blue),
-        home: const WeatherScreen(),
+        home: WeatherScreen(),
       ),
     );
   }
